@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>Mono.pdb2mdb</id>
+    <title>Mono pdb2mdb </title>
+    <version>0.1.0.20130128</version>
+    <authors>Xamarin</authors>
+    <owners>Ethan J Brown</owners>
+    <summary>A tool to generate Mono mdb debug files from .NET pdb files.</summary>
+    <description>The CSC compiler can produce a pdb file with debug symbols.
+      However, the Mono gmcs compiler produces a separate mdb file containing
+      such sybmols for use on Mono.  Use this utility to create an mdb file
+      from an original assembly and pdb file.
+
+      This allows Mono to generate stack traces with source files and line
+      numbers that may be useful in post-mortem debugging.
+
+      http://www.mono-project.com/Guide:Debugger
+      https://github.com/mono/mono/tree/master/mcs/tools/pdb2mdb
+    </description>
+    <projectUrl>http://www.mono-project.com/Guide:Debugger</projectUrl>
+    <tags>mono pdb mdb debug</tags>
+    <licenseUrl>https://github.com/mono/mono-tools/blob/master/gendarme/MIT.X11</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://github.com/Iristyle/NugetUnofficial/raw/master/Mono.pdb2mdb/Mono.pdb2mdb-logo.png</iconUrl>
+    <releaseNotes>
+    </releaseNotes>
+    <dependencies></dependencies>
+  </metadata>
+  <files>
+      <file src="tools\*" target="tools" />
+  </files>
+</package>
